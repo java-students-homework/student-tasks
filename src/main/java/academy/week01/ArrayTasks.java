@@ -12,7 +12,11 @@ public class ArrayTasks {
      * If the array is empty, return 0.
      */
     public int sum(int[] numbers) {
-        throw new UnsupportedOperationException("TODO");
+        int sum = 0;
+        for (int n : numbers) {
+            sum += n;
+        }
+        return sum;
     }
 
     /**
