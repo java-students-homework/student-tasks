@@ -11,15 +11,28 @@ public class IfElseTasks {
      * Example: a=3, b=7 → 7. If they are equal, return either one.
      */
     public int maxOfTwo(int a, int b) {
-        throw new UnsupportedOperationException("TODO");
-    }
 
-    /**
-     * Return the largest of three numbers.
-     * Example: a=2, b=9, c=4 → 9.
-     */
+        if (a > b) {
+            return a;
+        } else if (b > a) {
+            return b;
+        } else {
+            return a;
+        }
+    }
+        /**
+         * Return the largest of three numbers.
+         * Example: a=2, b=9, c=4 → 9.
+         */
     public int maxOfThree(int a, int b, int c) {
-        throw new UnsupportedOperationException("TODO");
+
+        if (b > a && b > c) {
+            return b;
+        } else if (a > b && a > c)
+            return a;
+        else {
+            return c;
+        }
     }
 
     /**
@@ -27,9 +40,13 @@ public class IfElseTasks {
      * Example: 4 → true, 7 → false.
      */
     public boolean isEven(int number) {
-        throw new UnsupportedOperationException("TODO");
-    }
 
+        if (number % 2 == 0) {
+            return true;
+        }else {
+            return false;
+        }
+    }
     /**
      * Return the sign of the number:
      *  1 if number > 0
@@ -37,15 +54,25 @@ public class IfElseTasks {
      *  0 if number == 0
      */
     public int sign(int number) {
-        throw new UnsupportedOperationException("TODO");
-    }
 
+        if (number > 0) {
+            return 1;
+        } else if (number < 0)
+            return -1;
+        else {
+            return 0;
+        }
+    }
     /**
      * Return the absolute value without using Math.abs.
      * Example: -5 → 5, 3 → 3, 0 → 0.
      */
     public int abs(int number) {
-        throw new UnsupportedOperationException("TODO");
+        if (number >= 0) {
+            return number;
+        } else {
+            return -number;
+        }
     }
 
     /**
@@ -56,7 +83,13 @@ public class IfElseTasks {
      * Assume min <= max.
      */
     public int clamp(int value, int min, int max) {
-        throw new UnsupportedOperationException("TODO");
+        if ( value < min) {
+            return min;
+        } else if (value >= max) {
+            return max;
+        } else{
+            return value;
+        }
     }
 
     /**
@@ -64,7 +97,11 @@ public class IfElseTasks {
      * Example: 17 → false, 18 → true.
      */
     public boolean canVote(int age) {
-        throw new UnsupportedOperationException("TODO");
+        if ( age >= 18) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -76,7 +113,19 @@ public class IfElseTasks {
      * If score < 0 or score > 100, return "INVALID".
      */
     public String grade(int score) {
-        throw new UnsupportedOperationException("TODO");
+
+            if (score < 0 || score > 100 ){
+               return "INVALID";
+            } else if (score >= 90) {
+                return "A";
+            } else if (score >= 75) {
+                return "B";
+            } else if (score >= 60) {
+                return "C";
+            } else {
+                return "F";
+            }
+
     }
 
     /**
@@ -88,7 +137,14 @@ public class IfElseTasks {
      * Example: 2000 → true, 1900 → false, 2024 → true.
      */
     public boolean isLeapYear(int year) {
-        throw new UnsupportedOperationException("TODO");
+        if (year % 400 == 0) {
+            return true;
+        } else if (year % 100 == 0) {
+            return false;
+        } else if (year % 4 == 0) {
+            return true;
+        }else
+            return false;
     }
 
     /**
@@ -99,6 +155,14 @@ public class IfElseTasks {
      * otherwise the number as a string (example: 7 → "7").
      */
     public String fizzBuzz(int number) {
-        throw new UnsupportedOperationException("TODO");
+        if (number % 3 == 0 && number % 5 == 0) {
+            return "FizzBuzz";
+        }else if (number % 3 == 0) {
+            return "Fizz";
+        }else if (number % 5 == 0){
+             return "Buzz";
+        }  else {
+            return number + "";
+        }
     }
 }
