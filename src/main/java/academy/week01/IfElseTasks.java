@@ -71,7 +71,7 @@ public class IfElseTasks {
         if (number >= 0) {
             return number;
         } else {
-            return number;
+            return -number;
         }
     }
 
@@ -113,7 +113,9 @@ public class IfElseTasks {
      * If score < 0 or score > 100, return "INVALID".
      */
     public String grade(int score) {
-            if (score >= 90) {
+
+              if (score < 0 || score > 100 ){
+            }else if (score >= 90) {
                 return "A";
             } else if (score >= 75) {
                 return "B";
@@ -160,7 +162,7 @@ public class IfElseTasks {
         }else if (number % 5 == 0){
              return "Buzz";
         }  else {
-            return "number+";
+            return number + "";
         }
     }
 }
