@@ -11,13 +11,19 @@ public class IfElseTasks {
      * Example: a=3, b=7 → 7. If they are equal, return either one.
      */
     public int maxOfTwo(int a, int b) {
-        throw new UnsupportedOperationException("TODO");
-    }
 
-    /**
-     * Return the largest of three numbers.
-     * Example: a=2, b=9, c=4 → 9.
-     */
+        if (a > b) {
+            return a;
+        } else if (b < a) {
+            return b;
+        } else {
+            return a;
+        }
+    }
+        /**
+         * Return the largest of three numbers.
+         * Example: a=2, b=9, c=4 → 9.
+         */
     public int maxOfThree(int a, int b, int c) {
         throw new UnsupportedOperationException("TODO");
     }
