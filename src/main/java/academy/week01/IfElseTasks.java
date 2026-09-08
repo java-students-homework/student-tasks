@@ -120,7 +120,16 @@ public class IfElseTasks {
      * Example: 17 → false, 18 → true.
      */
     public boolean canVote(int age) {
-        throw new UnsupportedOperationException("TODO");
+
+        if ( age > 18 ) {
+            return false;
+        } else if ( age < 18 ) {
+            return true;
+
+        } else {
+            return true;
+        }
+
     }
 
     /**
