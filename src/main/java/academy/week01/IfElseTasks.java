@@ -16,9 +16,9 @@ public class IfElseTasks {
             return a;
         } else if(a < b) {
             return b;
-        } else {
-            return a;
         }
+
+        return 0;
     }
 
     /**
