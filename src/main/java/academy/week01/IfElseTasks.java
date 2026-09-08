@@ -31,11 +31,9 @@ public class IfElseTasks {
 
         if (a > b && a > c) {
             return a;
-        } else if (b > a) {
+        } else if (b > a && b > c) {
             return b;
 
-        } else if (b > c) {
-            return b;
         } else {
             return b;
 
