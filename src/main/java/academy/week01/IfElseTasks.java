@@ -11,7 +11,14 @@ public class IfElseTasks {
      * Example: a=3, b=7 → 7. If they are equal, return either one.
      */
     public int maxOfTwo(int a, int b) {
-        throw new UnsupportedOperationException("TODO");
+
+        if (a > b) {
+            return a;
+        } else if(a < b) {
+            return b;
+        }
+
+        return 0;
     }
 
     /**
