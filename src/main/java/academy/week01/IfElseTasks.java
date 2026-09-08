@@ -114,18 +114,18 @@ public class IfElseTasks {
      */
     public String grade(int score) {
 
-              if (score < 0 || score > 100 ){
-            }else if (score >= 90) {
+            if (score < 0 || score > 100 ){
+               return "INVALID";
+            } else if (score >= 90) {
                 return "A";
             } else if (score >= 75) {
                 return "B";
             } else if (score >= 60) {
                 return "C";
-            } else if (score >= 0) {
-                return "F";
             } else {
-                return "INVALID";
+                return "F";
             }
+
     }
 
     /**
