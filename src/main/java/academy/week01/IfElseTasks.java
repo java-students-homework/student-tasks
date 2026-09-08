@@ -12,12 +12,12 @@ public class IfElseTasks {
      */
     public int maxOfTwo(int a, int b) {
 
-        if (a>b) {
-            return  a;
+        if (a > b) {
+            return a;
 
-        } else if(a<b) {
+        } else if (a < b) {
             return b;
-        }else {
+        } else {
             return a;
 
         }
@@ -28,25 +28,56 @@ public class IfElseTasks {
      * Example: a=2, b=9, c=4 → 9.
      */
     public int maxOfThree(int a, int b, int c) {
-        throw new UnsupportedOperationException("TODO");
+
+        if (a > b && a > c) {
+            return a;
+        } else if (b > a) {
+            return b;
+
+        } else if (b > c) {
+            return b;
+        } else {
+            return b;
+
+
+        }
+
+
     }
+
 
     /**
      * Return true if the number is even, otherwise false.
      * Example: 4 → true, 7 → false.
      */
     public boolean isEven(int number) {
-        throw new UnsupportedOperationException("TODO");
+
+        if (number % 2 == 0) {
+            return true;
+
+        } else
+            return false;
+
+
     }
 
     /**
      * Return the sign of the number:
-     *  1 if number > 0
+     * 1 if number > 0
      * -1 if number < 0
-     *  0 if number == 0
+     * 0 if number == 0
      */
     public int sign(int number) {
-        throw new UnsupportedOperationException("TODO");
+
+        if (number > 0) {
+            return 1;
+        } else if (number < 0) {
+            return -1;
+        } else {
+            return 0;
+        }
+
+
     }
 
     /**
@@ -54,7 +85,17 @@ public class IfElseTasks {
      * Example: -5 → 5, 3 → 3, 0 → 0.
      */
     public int abs(int number) {
-        throw new UnsupportedOperationException("TODO");
+
+        if (number > 0) {
+            return number;
+
+        } else if (number < 0) {
+            return -number;
+
+        } else {
+            return number;
+        }
+
     }
 
     /**
@@ -65,7 +106,14 @@ public class IfElseTasks {
      * Assume min <= max.
      */
     public int clamp(int value, int min, int max) {
-        throw new UnsupportedOperationException("TODO");
+
+        if (value < min) {
+            return min;
+        } else if (value > max) {
+            return max;
+        } else {
+            return value;
+        }
     }
 
     /**
