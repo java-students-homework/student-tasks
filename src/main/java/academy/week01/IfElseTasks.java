@@ -121,15 +121,12 @@ public class IfElseTasks {
      */
     public boolean canVote(int age) {
 
-        if ( age > 18 ) {
-            return false;
-        } else if ( age < 18 ) {
+        if (age >= 18) {
             return true;
-
         } else {
-            return true;
-        }
+            return false;
 
+        }
     }
 
     /**
@@ -148,9 +145,9 @@ public class IfElseTasks {
 
         if ( score >= 90) {
             return "A";
-        } else if ( score <= 89 ) {
+        } else if ( score >= 75) {
             return "B";
-        } else if ( score <= 74 ) {
+        } else if ( score >= 60) {
             return "C";
         } else {
             return "F";
