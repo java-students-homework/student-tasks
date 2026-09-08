@@ -87,7 +87,7 @@ public class IfElseTasks {
             return min;
         } else if (value >= max) {
             return max;
-        } else
+        } else{
             return value;
         }
     }
@@ -163,4 +163,4 @@ public class IfElseTasks {
             return "number+";
         }
     }
-
+}
