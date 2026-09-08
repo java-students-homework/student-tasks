@@ -68,9 +68,9 @@ public class IfElseTasks {
      * Example: -5 → 5, 3 → 3, 0 → 0.
      */
     public int abs(int number) {
-        if (number > 0) {
+        if (number >= 0) {
             return number;
-        } else if (number < 0) {
+        } else {
             return number;
         }
     }
@@ -83,7 +83,13 @@ public class IfElseTasks {
      * Assume min <= max.
      */
     public int clamp(int value, int min, int max) {
-        throw new UnsupportedOperationException("TODO");
+        if ( value < min) {
+            return min;
+        } else if (value >= max) {
+            return max;
+        } else
+            return value;
+        }
     }
 
     /**
@@ -93,7 +99,7 @@ public class IfElseTasks {
     public boolean canVote(int age) {
         if ( age >= 18) {
             return true;
-        } else if (age <= 17) {
+        } else {
             return false;
         }
     }
@@ -129,7 +135,7 @@ public class IfElseTasks {
      * Example: 2000 → true, 1900 → false, 2024 → true.
      */
     public boolean isLeapYear(int year) {
-
+        throw new UnsupportedOperationException("TODO");
     }
 
     /**
