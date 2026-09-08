@@ -26,8 +26,21 @@ public class IfElseTasks {
      * Example: a=2, b=9, c=4 → 9.
      */
     public int maxOfThree(int a, int b, int c) {
-        throw new UnsupportedOperationException("TODO");
+         if (a > b && a >c) {
+             return a;
+
+         }
+         else if (b > a && b >c) {
+             return b;
+         }
+         else if (c > a && c >b ) {
+             return c;
+         }
+          else {
+              return b;
+         }
     }
+
 
     /**
      * Return true if the number is even, otherwise false.
