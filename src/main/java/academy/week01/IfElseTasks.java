@@ -141,7 +141,21 @@ public class IfElseTasks {
      * If score < 0 or score > 100, return "INVALID".
      */
     public String grade(int score) {
-        throw new UnsupportedOperationException("TODO");
+
+        if ( score < 0 || score > 100 ) {
+            return "INVALID";
+        }
+
+        if ( score >= 90) {
+            return "A";
+        } else if ( score <= 89 ) {
+            return "B";
+        } else if ( score <= 74 ) {
+            return "C";
+        } else {
+            return "F";
+        }
+
     }
 
     /**
@@ -153,7 +167,17 @@ public class IfElseTasks {
      * Example: 2000 → true, 1900 → false, 2024 → true.
      */
     public boolean isLeapYear(int year) {
-        throw new UnsupportedOperationException("TODO");
+
+        if ( year % 400 == 0) {
+            return true;
+
+        } else if ( year % 100 == 0) {
+            return false;
+        } else if ( year % 4 == 0 ) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -164,6 +188,17 @@ public class IfElseTasks {
      * otherwise the number as a string (example: 7 → "7").
      */
     public String fizzBuzz(int number) {
-        throw new UnsupportedOperationException("TODO");
+
+
+        if ( number % 3 == 0 && number % 5 == 0 ) {
+            return "FizzBuzz";
+
+        } else if ( number % 3 == 0 ) {
+            return "Fizz";
+        } else if ( number % 5 == 0 ) {
+            return "Buzz";
+        } else {
+            return number + "";
+        }
     }
 }
