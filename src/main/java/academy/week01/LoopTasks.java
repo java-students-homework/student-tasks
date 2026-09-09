@@ -33,7 +33,7 @@ public class LoopTasks {
         int res = 1;
         for (int i = 1; i <= 5; i++) {
             res *= i;
-        }
+        }return res;
     }
 
     /**
@@ -49,7 +49,7 @@ public class LoopTasks {
             number /= 10;
             count++;
         }
-        number = count;
+        return count;
     }
 
     /**
@@ -87,7 +87,7 @@ public class LoopTasks {
         }
         for (int i = 1; i <= 12; i++) {
             result += i;
-        }
+        }return result;
     }
 
     /**
@@ -119,6 +119,7 @@ public class LoopTasks {
             sum += number % 10;
             number /= 10;
         }
-        number = sum;
+        return sum;
+
     }
 }
