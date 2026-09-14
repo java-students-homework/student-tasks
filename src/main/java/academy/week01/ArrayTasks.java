@@ -11,8 +11,12 @@ public class ArrayTasks {
      * Sum of all elements.
      * If the array is empty, return 0.
      */
-    public int sum(int[] numbers) {
-        throw new UnsupportedOperationException("TODO");
+    public int sum(int[] numbers){
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }return sum;
+
     }
 
     /**
@@ -20,15 +24,28 @@ public class ArrayTasks {
      * The array is not empty.
      */
     public int max(int[] numbers) {
-        throw new UnsupportedOperationException("TODO");
+      int max = 0;
+       for (int i = 0; i < numbers.length; i++){
+           if (numbers[i] > max){
+               max = numbers.length;
+           }
+       }
+       return max;
     }
+
 
     /**
      * Find the minimum element.
      * The array is not empty.
      */
     public int min(int[] numbers) {
-        throw new UnsupportedOperationException("TODO");
+        int min = 0;
+        for (int i = 0; i < numbers.length; i++){
+            if (numbers[i] < min){
+                min = numbers.length;
+            }
+        }
+        return min;
     }
 
     /**
@@ -36,22 +53,39 @@ public class ArrayTasks {
      * If the array is empty, return 0.
      */
     public int countValue(int[] numbers, int value) {
-        throw new UnsupportedOperationException("TODO");
+       int count = 0;
+        for (int i = 0; i < numbers.length; i ++){
+            if (numbers[i] == value){
+                count ++;
+            }
+
+        }return count;
     }
 
     /**
      * Return true if the array contains value.
      */
     public boolean contains(int[] numbers, int value) {
-        throw new UnsupportedOperationException("TODO");
+       for (int i = 0; i < numbers.length; i++) {
+           if (numbers[i] == value){
+               return true;
+           }
+       }return false;
+
     }
+
 
     /**
      * Arithmetic mean. If the array is empty, return 0.0.
      * Example: {2, 4} → 3.0.
      */
     public double average(int[] numbers) {
-        throw new UnsupportedOperationException("TODO");
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers.length;
+
+        }
+        return sum / numbers.length;
     }
 
     /**
@@ -60,6 +94,15 @@ public class ArrayTasks {
      * Example: {1, 2, 3} → {3, 2, 1}.
      */
     public int[] reverse(int[] numbers) {
-        throw new UnsupportedOperationException("TODO");
+
+        int [] arr = new int[ numbers.length];
+        int j = 0;
+
+        for (int i = numbers.length - 1; i >= 0 ; i--){
+            arr[j] = numbers[i];
+
+            j++;
+        }
+        return arr;
     }
 }
