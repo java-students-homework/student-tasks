@@ -1,5 +1,7 @@
 package academy.week01;
 
+import com.fasterxml.jackson.databind.deser.DataFormatReaders;
+
 /**
  * Week 1 · Lesson 2 — loops: for / while.
  * Write code only inside the methods. Do not change method signatures.
@@ -12,24 +14,59 @@ public class LoopTasks {
      * Example: n=4 → 1+2+3+4 = 10.
      */
     public int sumToN(int n) {
-        throw new UnsupportedOperationException("TODO");
-    }
 
+        throw new UnsupportedOperationException("TODO");
+//        if (n <= 0) {
+//            return 0;
+//        }
+//
+//        int result = 0;
+//        for (int f = 1; f <= n; f++) {
+//            result = result + n;
+//
+//        }
+//        return result;
+    }
     /**
      * Factorial of n (n!). 0! = 1, 1! = 1.
      * If n < 0, return -1.
      * Example: n=5 → 120.
      */
     public int factorial(int n) {
+
         throw new UnsupportedOperationException("TODO");
+//        if (n < 0) {
+//            return -1;
+//        }
+//        int result = 1;
+//        for (int i = 1; i <= n; i++) {
+//            result *= i;
+//        }
+//        return result;
+
+
     }
+
 
     /**
      * How many digits the number has. Ignore the minus sign for negatives.
      * Example: 0 → 1, 123 → 3, -45 → 2.
      */
     public int countDigits(int number) {
+
         throw new UnsupportedOperationException("TODO");
+//        number = Math.abs(number);
+//
+//        int count = 1;
+//
+//        while (number >= 10) {
+//            number /= 10;
+//            count++;
+//        }
+//
+//        return count;
+
+
     }
 
     /**
@@ -45,7 +82,16 @@ public class LoopTasks {
      * Example: 2 → true, 9 → false, 1 → false.
      */
     public boolean isPrime(int number) {
+
         throw new UnsupportedOperationException("TODO");
+//        for( int i = 2; i < number; i ++) {
+//
+//            if ( number % i == 0) {
+//                return false;
+//            }
+//
+//        }
+//        return true;
     }
 
     /**
@@ -54,7 +100,18 @@ public class LoopTasks {
      * Example: n=6 → 2+4+6 = 12.
      */
     public int sumEvenToN(int n) {
+
         throw new UnsupportedOperationException("TODO");
+//        int result = 0;
+//
+//        for (int i = 1; i <= n; i++) {
+//            if (i % 2 == 0) {
+//                result += i;
+//
+//            }
+//
+//        }
+//        return result;
     }
 
     /**
@@ -63,7 +120,13 @@ public class LoopTasks {
      * Example: 2^5 → 32.
      */
     public int power(int base, int exponent) {
+
         throw new UnsupportedOperationException("TODO");
+//        int result = 1;
+//        for (int i = 1; i <= exponent; i++) {
+//            result *= base;
+//        }
+//        return result;
     }
 
     /**
@@ -71,6 +134,19 @@ public class LoopTasks {
      * Example: 123 → 6, -10 → 1.
      */
     public int sumOfDigits(int number) {
+
         throw new UnsupportedOperationException("TODO");
+//        number = Math.abs(number);
+//
+//        int sum = 0;
+//
+//        while (number >= 0) {
+//            sum += number % 10;
+//            number /= 10;
+//
+//        }
+//        return sum;
+
     }
+
 }

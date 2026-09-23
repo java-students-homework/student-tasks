@@ -1,5 +1,7 @@
 package academy.week03;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -14,7 +16,14 @@ public class ListTasks {
      * Example: [3, 1, 3, 2, 1] → [3, 1, 2].
      */
     public List<Integer> removeDuplicates(List<Integer> numbers) {
-        throw new UnsupportedOperationException("TODO");
+        List<Integer> result = new LinkedList<>();
+        for (Integer number : numbers) {
+            if (!result.contains(number)) {
+                result.add(number);
+            }
+        }
+        return result;
+
     }
 
     /**
@@ -22,7 +31,18 @@ public class ListTasks {
      * Example: [1, 2], [3] → [1, 2, 3].
      */
     public List<Integer> concat(List<Integer> a, List<Integer> b) {
-        throw new UnsupportedOperationException("TODO");
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+
+        ArrayList<Integer> list2 = new ArrayList<>();
+        list.add(3);
+        list.add(4);
+
+        a.addAll(b);
+        return a;
+
     }
 
     /**
@@ -30,7 +50,17 @@ public class ListTasks {
      * Example: [1, -2, 3] → [1, 3].
      */
     public List<Integer> withoutNegatives(List<Integer> numbers) {
-        throw new UnsupportedOperationException("TODO");
+
+
+        for (int i = 0; i < numbers.size(); i++) {
+
+            if (numbers.get(i) < 0) {
+
+                numbers.remove(i);
+            }
+
+        }
+        return numbers;
     }
 
     /**
@@ -42,3 +72,6 @@ public class ListTasks {
         throw new UnsupportedOperationException("TODO");
     }
 }
+
+
+
