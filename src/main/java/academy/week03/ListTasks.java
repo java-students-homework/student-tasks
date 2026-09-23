@@ -38,6 +38,7 @@ public class ListTasks {
 
         ArrayList<Integer> list2 = new ArrayList<>();
         list.add(3);
+        list.add(4);
 
         a.addAll(b);
         return a;
