@@ -41,7 +41,7 @@ public class ListTasks {
         list.add(4);
 
         a.addAll(b);
-        return list;
+        return a;
 
     }
 
