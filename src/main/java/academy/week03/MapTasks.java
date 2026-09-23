@@ -67,6 +67,25 @@ public class MapTasks {
      * Example: {a=1, b=2} + {b=3, c=4} → {a=1, b=5, c=4}.
      */
     public Map<String, Integer> mergeSum(Map<String, Integer> a, Map<String, Integer> b) {
-        throw new UnsupportedOperationException("TODO");
+
+        Map<String, Integer> map1 = new HashMap<>();
+
+        map1.put("One" ,1);
+        map1.put("Two", 2);
+        map1.put("Tree", 3);
+
+
+        Map<String,Integer> map2 = new HashMap<>();
+
+        map2.put("Four", 4);
+        map2.put("Five", 5);
+        map2.put("Six",6);
+
+
+        Map<String,Integer> unitMap = new HashMap<>(map1);
+        unitMap.putAll(map2);
+
+        return unitMap;
+
     }
 }
