@@ -15,18 +15,18 @@ public class LoopTasks {
      */
     public int sumToN(int n) {
 
-        if (n <= 0) {
-            return 0;
-        }
-
-        int result = 0;
-        for (int f = 1; f <= n; f++) {
-            result = result + n;
-
-        }
-        return result;
+        throw new UnsupportedOperationException("TODO");
+//        if (n <= 0) {
+//            return 0;
+//        }
+//
+//        int result = 0;
+//        for (int f = 1; f <= n; f++) {
+//            result = result + n;
+//
+//        }
+//        return result;
     }
-
     /**
      * Factorial of n (n!). 0! = 1, 1! = 1.
      * If n < 0, return -1.
@@ -34,14 +34,15 @@ public class LoopTasks {
      */
     public int factorial(int n) {
 
-        if (n < 0) {
-            return -1;
-        }
-        int result = 1;
-        for (int i = 1; i <= n; i++) {
-            result *= i;
-        }
-        return result;
+        throw new UnsupportedOperationException("TODO");
+//        if (n < 0) {
+//            return -1;
+//        }
+//        int result = 1;
+//        for (int i = 1; i <= n; i++) {
+//            result *= i;
+//        }
+//        return result;
 
 
     }
@@ -53,16 +54,17 @@ public class LoopTasks {
      */
     public int countDigits(int number) {
 
-        number = Math.abs(number);
-
-        int count = 1;
-
-        while (number >= 10) {
-            number /= 10;
-            count++;
-        }
-
-        return count;
+        throw new UnsupportedOperationException("TODO");
+//        number = Math.abs(number);
+//
+//        int count = 1;
+//
+//        while (number >= 10) {
+//            number /= 10;
+//            count++;
+//        }
+//
+//        return count;
 
 
     }
@@ -81,14 +83,15 @@ public class LoopTasks {
      */
     public boolean isPrime(int number) {
 
-        for( int i = 2; i < number; i ++) {
-
-            if ( number % i == 0) {
-                return false;
-            }
-
-        }
-        return true;
+        throw new UnsupportedOperationException("TODO");
+//        for( int i = 2; i < number; i ++) {
+//
+//            if ( number % i == 0) {
+//                return false;
+//            }
+//
+//        }
+//        return true;
     }
 
     /**
@@ -98,16 +101,17 @@ public class LoopTasks {
      */
     public int sumEvenToN(int n) {
 
-        int result = 0;
-
-        for (int i = 1; i <= n; i++) {
-            if (i % 2 == 0) {
-                result += i;
-
-            }
-
-        }
-        return result;
+        throw new UnsupportedOperationException("TODO");
+//        int result = 0;
+//
+//        for (int i = 1; i <= n; i++) {
+//            if (i % 2 == 0) {
+//                result += i;
+//
+//            }
+//
+//        }
+//        return result;
     }
 
     /**
@@ -117,11 +121,12 @@ public class LoopTasks {
      */
     public int power(int base, int exponent) {
 
-        int result = 1;
-        for (int i = 1; i <= exponent; i++) {
-            result *= base;
-        }
-        return result;
+        throw new UnsupportedOperationException("TODO");
+//        int result = 1;
+//        for (int i = 1; i <= exponent; i++) {
+//            result *= base;
+//        }
+//        return result;
     }
 
     /**
@@ -130,16 +135,17 @@ public class LoopTasks {
      */
     public int sumOfDigits(int number) {
 
-        number = Math.abs(number);
-
-        int sum = 0;
-
-        while (number >= 0) {
-            sum += number % 10;
-            number /= 10;
-
-        }
-        return sum;
+        throw new UnsupportedOperationException("TODO");
+//        number = Math.abs(number);
+//
+//        int sum = 0;
+//
+//        while (number >= 0) {
+//            sum += number % 10;
+//            number /= 10;
+//
+//        }
+//        return sum;
 
     }
 
