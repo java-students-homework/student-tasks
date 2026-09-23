@@ -30,10 +30,10 @@ public class MapTasks {
      */
     public Map<Integer, String> invert(Map<String, Integer> map) {
 
-        Map<String, Integer> oroginalMap = new HashMap<>();
-        oroginalMap.put("One", 1);
-        oroginalMap.put("Two", 2);
-        oroginalMap.put("Tree", 3);
+        Map<String, Integer> originalMap = new HashMap<>();
+        originalMap.put("One", 1);
+        originalMap.put("Two", 2);
+        originalMap.put("Tree", 3);
 
 
         Map<Integer , String> invertedMap = new HashMap<>();
@@ -51,11 +51,11 @@ public class MapTasks {
     public int sumValues(Map<String, Integer> map) {
 
         HashMap<String , Integer> newMap = new HashMap<>();
-        map.put("Hebron", 5);
-        map.put("Hansen", 1);
+        map.put("a", 1);
+        map.put("b", 2);
 
-        map.put("Hebron" , map.get("Hebron") + map.get("Hansen"));
-         return map.get("Hebron");
+        map.put("a" , map.get("a") + map.get("b"));
+         return map.get("a");
 
 
 

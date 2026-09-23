@@ -40,7 +40,7 @@ public class ListTasks {
         list.add(3);
         list.add(4);
 
-        list.addAll(list2);
+        a.addAll(b);
         return list;
 
     }
