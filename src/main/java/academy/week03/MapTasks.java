@@ -1,5 +1,6 @@
 package academy.week03;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +15,13 @@ public class MapTasks {
      * Example: ["a", "b", "a"] → {a=2, b=1}.
      */
     public Map<String, Integer> wordCount(List<String> words) {
-        throw new UnsupportedOperationException("TODO");
+        Map<String, Integer> map = new HashMap<>();
+
+        for (String word : words) {
+            map.put(word, map.getOrDefault(word, 0) + 1);
+
+        }
+        return map;
     }
 
     /**
@@ -22,7 +29,19 @@ public class MapTasks {
      * Example: {a=1, b=2} → {1=a, 2=b}.
      */
     public Map<Integer, String> invert(Map<String, Integer> map) {
-        throw new UnsupportedOperationException("TODO");
+
+        Map<String, Integer> oroginalMap = new HashMap<>();
+        oroginalMap.put("One", 1);
+        oroginalMap.put("Two", 2);
+        oroginalMap.put("Tree", 3);
+
+
+        Map<Integer , String> invertedMap = new HashMap<>();
+        for (Map.Entry<String, Integer> entry : oroginalMap.entrySet()) {
+            invertedMap.put(entry.getValue(), entry.getKey());
+
+        }
+        return invertedMap;
     }
 
     /**
@@ -30,7 +49,16 @@ public class MapTasks {
      * Example: {a=1, b=2} → 3.
      */
     public int sumValues(Map<String, Integer> map) {
-        throw new UnsupportedOperationException("TODO");
+
+        HashMap<String , Integer> Newmap = new HashMap<>();
+        map.put("Hebron", 5);
+        map.put("Hansen", 1);
+
+        map.put("Hebron" , map.get("Hebron") + map.get("Hansen"));
+         return map.get("Hebron");
+
+
+
     }
 
     /**
